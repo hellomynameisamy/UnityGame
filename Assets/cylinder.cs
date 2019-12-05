@@ -6,10 +6,12 @@ public class cylinder : MonoBehaviour
 {
     private Rigidbody rb;
     public float speed;
-
+    public AudioSource sound;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        sound =GetComponent<AudioSource>();
+	sound.Play();
     }
 
    
